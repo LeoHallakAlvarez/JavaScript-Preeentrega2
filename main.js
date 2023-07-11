@@ -4,7 +4,7 @@ prompt("para ingresar al sitio debe ser mayor de edad, tiene mas de 18? Ingrese 
 // console.log(motos);
 
 const dataBusqueda = {
-    marca:'Brosetti',
+    marca:'Derbi',
     modelo:'',
     año:'',
     minimo:'',
@@ -71,8 +71,13 @@ function mostrarMotos(motos){
     }
 
     function filtrarMoto(){
-        let resultado = motos.filter(filtrarMarca)
+        let resultado = motos.filter(filtrarPorMarca)
         console.log(resultado.length)
+        if(resultado.length){
+            mostrarMotos(resultado)
+        }else{
+            console.log("no hay motos en esta marca") 
+        }
     }
 
 

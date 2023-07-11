@@ -39,7 +39,7 @@ const motos = [
     modelo:'ALM-88',
     año:'2011',
     precio:'90000',
-    color:'verder',
+    color:'verde',
 },
 {
     marca:'Honda',
